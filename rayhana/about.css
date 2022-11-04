@@ -1,0 +1,205 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: borger-box; /* allows us to include the padding and border in an element's total width and height.*/
+	font-family: 'roboto', sans-serif; /*sans-serif:Les caract?res n'ont pas d'empattement, leurs extr?mit?s sont anguleuses*/   
+    
+}
+.header{
+	min-height:1vh;
+	width:100%;
+	background-color:#AF2230;
+	background-size:auto;
+	background-position:center;
+	
+	
+}
+nav{
+	padding: 20px 7%;/* 20 from top and bottom and 7 from left and right */
+	display: flex;/*to put space between logo and search box*/
+	justify-content: space-between;/*justify-content:ali0gns the flexible container's items when the items do not use all available space on the main-axis (horizontally)      space-btween:Display the flex items with space between the lines*/
+	align-items:center;
+}
+
+.logo {
+	width:140px;
+	cursor:pointer;
+}
+.nav-links li{
+	list-style:none;
+	display:inline-block; /* meli kenou el links ta7t bathhom bech ywalew bjanb bathhom */
+	margin: 10px 30px;
+	
+}
+.nav-links li a{
+	text-decoration:none;
+	color:#fff;
+}
+.Register-btn{
+	background:#fff;
+	color:#000;
+	padding: 8px 20px ; 
+	border-radius:10px ;
+	text-decoration:none;
+	font-size:14px;
+}
+.Register-btn:hover{
+	color:#AF2230;
+}
+/*about us page**************************/
+.container1{/* feha el text mta find ypur next stay*/
+	padding:0 7%;
+}
+.search-box{
+			border:9px solid white;
+	        border-radius:10px;
+	        width:340px;
+	        background-color:#fff;
+        }
+.input-txt{
+	        border-style:none;
+			padding: 1px 22px;
+			outline :none;
+        }
+.btn-submit{ 
+	position :absolute;
+	border:3px solid black;
+	border-radius:10px;
+	background-color:black;
+	color:white;
+	outline:none;
+	cursor:pointer;
+	margin:-9px 83px ;
+	padding:8px 10px 8px 6px;
+	width:60px;
+        }
+.btn-submit:hover{ 
+		color :#AF2230;
+}
+
+
+
+.active{
+	position:relative;
+}
+.active::after{ /*hethi ma khedmetech une petite ligne qui indique que enti f el page popular places min 46*/
+	content: '';
+	background: #fff;
+	width:25px;
+	height:2px;
+	position:absolute;
+	left:50%;
+	transform:translateX(-50%);
+	bottom: -12px;
+	border-radius:2px;
+}
+.tablee{
+	background-color:white;
+}
+.abo{
+	border: 1px solid white;
+	border-radius:10px;
+   
+    padding: 5px;
+    background-color: white;
+	box-shadow:2px 2px 10px #c0c0c0;	
+}
+/****************************CONTACT US PAGE*/
+.t2{
+	background-color: #AF2230;
+}
+.tdbg{
+	
+	width:100%;
+	
+}
+.formi {
+	position: relative;
+  
+	width  : 400px;
+	height : 385px;
+	padding : 16px;
+	padding-left: 100px;
+	padding-top: 50px;
+	border-radius:12px;
+	margin-left:140px;
+	margin:15px;
+  
+	background-color:#fff;
+  }
+  .h11 {
+	position : static;
+	left : 415px;
+	top  : 10px;
+    font-weight: 300px; ;
+	
+  }
+  .container-form{
+	  position:absolute ;
+	  padding-top:70px;
+	 
+  }
+  
+  .from {
+	position: static;
+	left : 398px;
+	top  : 235px;
+	margin:10px;
+	border-color: #AF2230;
+	border:2px;
+	
+  }
+  
+  .reply {
+	position: static;
+	left : 390px;
+	top  : 285px;
+	margin:10px;
+	border-color: #AF2230;
+	border:2px;
+	
+  }
+  .a0{
+	  text-align:left;
+  }
+  
+  .message {
+	position: static;
+	left : 20px;
+	top  : 70px;
+	margin:10px;
+	border-color: #AF2230;
+	border:2px;
+	
+  }
+  input, textarea {
+	
+  
+	border  : none;
+	padding : 0 10px;
+	
+	width   : 240px;
+	margin:10px;
+	background: none;
+	border-color: #AF2230;
+	border:2px;
+
+  }
+  .buttonf{
+	border-radius: 5px;
+    border: 0;
+    width: 150px;
+    height:25px;
+    font-family: Tahoma;
+    background: #AF2230;
+	
+  }
+   .buttonf:hover{
+	   color:white;
+   }
+  .formiframe{
+	  margin:10px;
+	  margin-left:40px;
+	  border-radius: 12px;
+	  
+  }

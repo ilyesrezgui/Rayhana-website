@@ -1,0 +1,6 @@
+.form{
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    background-color: grey;
+}

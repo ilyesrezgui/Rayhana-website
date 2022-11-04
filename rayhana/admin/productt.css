@@ -1,0 +1,138 @@
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: borger-box; /* allows us to include the padding and border in an element's total width and height.*/
+	font-family: 'roboto', sans-serif; /*sans-serif:Les caract?res n'ont pas d'empattement, leurs extr?mit?s sont anguleuses*/   
+}
+.header{
+	min-height:1vh;
+	width:100%;
+	background-color:#AF2230;
+	background-size:auto;
+	background-position:center;
+	
+	
+}
+nav{
+	padding: 20px 7%;/* 20 from top and bottom and 7 from left and right */
+	display: flex;/*to put space between logo and search box*/
+	justify-content: space-between;/*justify-content:ali0gns the flexible container's items when the items do not use all available space on the main-axis (horizontally)      space-btween:Display the flex items with space between the lines*/
+	align-items:center;
+}
+
+.logo {
+	width:140px;
+	cursor:pointer;
+}
+.nav-links li{
+	list-style:none;
+	display:inline-block; /* meli kenou el links ta7t bathhom bech ywalew bjanb bathhom */
+	margin: 10px 30px;
+	
+}
+.nav-links li a{
+	text-decoration:none;
+	color:#fff;
+}
+/*css mtaa connexion.php*/
+.creercompte-box {
+    width: 487px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+	
+}
+div {
+    display: block;
+	
+	
+}
+input[type="password"], input[type="text"] {
+    display: block;
+    width: 400px;
+    height: 10px;
+    
+    color: rgb(56, 56, 56);
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 4px 10px;
+    font-family: roboto, sans-serif;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px bold black;
+    outline: none;
+    margin: 20px 0px;
+}
+input[type="password"]:focus, input[type="text"]:focus{
+	background-color:black;
+	color:white;
+	opacity:0.7;
+	
+}
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.btn {
+    width: 440px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: block;
+    background: rgb(56, 56, 56);
+    border-radius: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    margin: 30px 0px;
+}
+.btn:hover{
+	color:#AF2230;
+}
+/*css mtaa dashboard.php*/
+.btt{
+	background-color:#AF2230;
+	padding:70px;
+	border:1px bold #AF2230;
+	border-radius:10px;
+	color:white;
+	font-size:30px;
+	text-decoration:none;
+	cursor:pointer;
+}	
+.btt:hover{
+	color:black;
+	
+}
+.dashboard{
+	background-image:url(img/bgtr.jpg);
+	background-size:cover;
+}
+/*css mtaa client.php*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+.product{
+    border: 1px solid white;
+	border-radius:10px;
+    margin: -1px 19px 3px -1px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+	width:100%;
+	box-shadow:2px 2px 10px #c0c0c0;
+	
+    }
+.delete{
+	text-decoration:none;
+	cursor:pointer;
+	color:#AF2230;
+}
+.delete:hover{
+	text-decoration:underline;
+}

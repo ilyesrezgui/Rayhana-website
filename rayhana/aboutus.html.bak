@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--afficher la page b akwa qualit? mawjouda-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- bech el page tethal ala telifoun f kobr el ecran w el pc kif kif -->
+	<title> RAYHANA</title> <!-- donner un titre pour la page-->
+	<link href="about.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/b42ff78973.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link href="footer.css" rel="stylesheet">
+	
+	</head>
+	<body>
+	<div class="header">
+	<nav id="nav-bar">
+		<img src="img/Plan de travail 9.png" class="logo">
+		<ul class="nav-links">
+			<li><a href="indexberasmi.php">Home</a></li>
+			<li><a href="indexberasmi.php">Our Products</a></li>
+			<li><a href="aboutus.html" class="active">About Us</a></li>
+			<li><a href="contactuus.html">Contact Us</a></li>
+		</ul>
+		<a href="Signin.html" class="Register-btn">Sign Out</a>
+	</nav>
+        <div class="about-us">
+        <table class="tablee" cellspacing=50>
+            <tr>
+            <td> <img class="abo" src="img/rayhana 1.png" alt=""></td>
+            <td><p class="elp">
+                <b>RAYHANA</b><br><br>For more than 16 years ,RAYHANA offers unique jewelry for evey occasion.<br>
+                  <br>We have added a modern twist to our beautiful
+                   traditional Tunisian accessories to have
+                   jewels of which each one tells
+                   a story about our history.
+                <br><br>Feel free to email us if you have any questions or suggestions.</p>
+            </td>
+        </tr>
+        </table>  
+        </div>
+        <div class="container">
+            <footer>
+                </footer>
+        </div>
+		<!-- hethi el taskira div mta3 el container sachant que le contnu lkol feha -->
+    <script src="home.js"></script>
+  <!-- link to js-->
+	<script src="main.js"></script>
+	<script src="js/footer.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,1008 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: borger-box; /* allows us to include the padding and border in an element's total width and height.*/
+	font-family: 'roboto', sans-serif; /*sans-serif:Les caract?res n'ont pas d'empattement, leurs extr?mit?s sont anguleuses*/   
+}
+.header{
+	min-height:100vh;
+	width:100%;
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(img/test.jpg);
+	background-size:cover;
+	background-position:center;
+	
+	
+}
+nav{
+	padding: 20px 7%;/* 20 from top and bottom and 7 from left and right */
+	display: flex;/*to put space between logo and search box*/
+	justify-content: space-between;/*justify-content:ali0gns the flexible container's items when the items do not use all available space on the main-axis (horizontally)      space-btween:Display the flex items with space between the lines*/
+	align-items:center;
+}
+
+.logo {
+	width:140px;
+	cursor:pointer;
+}
+.nav-links li{
+	list-style:none;
+	display:inline-block; /* meli kenou el links ta7t bathhom bech ywalew bjanb bathhom */
+	margin: 10px 30px;
+	
+}
+.nav-links li a{
+	text-decoration:none;
+	color:#fff;
+}
+.Register-btn{
+	background:#fff;
+	color:#000;
+	padding: 8px 20px ; 
+	border-radius:10px ;
+	text-decoration:none;
+	font-size:14px;
+}
+.Register-btn:hover{
+	color:#AF2230;
+}
+.container1{/* feha el text mta find ypur next stay*/
+	padding:0 7%;
+}
+
+
+.header h1{/*el text find your stay*/
+	font-size: 4vw;
+	font-weight:500;
+	color:#fff;
+	text-align:center;
+	padding-top:22%; 
+}
+.locationinput{
+	flex: 1;
+}
+.search-bar form label{
+	font-weight:bold;
+}
+/*exclusives--------*/
+
+    .product{
+	  position:relative; /* positionne par rapport a la page */
+	  overflow:hidden; /* chnwa ysir k el content yfout el page kima el liste mta les produits tu peux derouler a gauche donc soit you cut it or allow the page to go to the left */
+	  padding:20px;
+  }
+  .sub-title {
+	margin:50px 50px 25px;
+	font-size:2.2vw;
+	font-weight:500;
+	color:#333;	
+}
+  .product-category{ /* text eli maktoub fih soldé */
+	  padding:0 10vw;
+	  font-size:30px;
+	  font-weight:500;
+	  margin-bottom:40px;
+      text-transform:capitalize;
+	  color:#7b161d;
+	  font-family: 'candara light', sans-serif;
+	  
+  }
+  .product-container{
+	  padding:0 10vw;
+	  display: flex;
+	  overflow-x:auto; /* pour spceifier que le deroulement se fait sur l'axe d'abcisse */
+	  scroll-behavior:smooth;
+  }
+  .product-container::-webkit-scrollbar{
+		display:none;
+  }
+    .product-card{
+		flex: 0 0 auto ;
+ 		 width : 250 px ;
+ 		 height:450px ;
+ 		 margin-right:40px;
+  }
+  
+ 	 .product-image{
+		position :relative;
+		width: 400px ;
+		height:300px ;
+		overflow: hidden;
+		border-radius:20px;
+		}		
+	.product-thumb{
+		width:100% ;
+		height:350px;
+		object-fit: cover;
+		}
+	.product-thumb:hover{
+		transform: scale(1.1);
+		transition: 0.5s;	
+	}	
+  
+  .discount-tag{
+	  position:absolute;
+	  background:#af2230;
+	  padding : 5px; 
+	  border-radius:5px;
+	  color:#fff;
+	  right:10px;
+	  top:10px;
+	  text-transform:capitalize;
+  }
+   .card-btn{
+	  position:absolute;
+	  bottom:10px; 
+	  left:50px; 
+	  transform: translateX(-50%);
+	  padding: 10 px ; 
+	  width : 90%;
+	  text-transform : captalize ; 
+      border: none ; 
+	  outline: none; 
+	  background : #c5a555;
+	  border-radius:5px ; 
+	  transition:0.5s;
+	  cursor:pointer;
+	  opacity:1;
+	  color:#7b161d;
+	  margin-left: 110px;
+  }
+  .card-btn:hover {
+	  opacity:0.5;
+	  }
+  .card-btn:hover{
+	  background:#c5a555;
+	  }
+.prouct-info{
+	  width:100%;
+	  height:100px ;
+	  padding-top:10px ;
+	  }
+   .prouct-brand{
+	   text-transform: uppercase; 
+   }
+	  
+   .product-short-des{
+	   width:100%; 
+	   height:20px;
+	   line-height:20px;
+	   overflow: hidden ;
+	   opacity:0.5;
+	   text-transform:capitalize;
+	   margin:5px 0;
+   }
+   .price{
+	   font-weight:900;
+       font-size:20px;
+	   }
+	.actual-price{
+		margin-left:20px;
+		opacity:0.5;
+		text-decoration: line-through;
+	}
+	
+.pre-btn , .nxt-btn{
+		border: none ; 
+		width: 15px; 
+		height:15px ;
+		position: absolute;
+		
+		top: 15; /* the only way bech el flesh mta suiv jeni fin les images ki hatitit top diff de zero */
+		display: flex ; 
+		justify-content: center ; 
+		align-items: center ;
+		background:transparent; /*linear-gradient(90deg,rgba(255,255,255,0) 0%,#fff 100%);*/
+		cursor: pointer; 
+		z-index:8;
+		margin: 15px;
+		margin-top:200px;
+	}
+.pre-btn {
+	    
+		left:0;
+		transform:rotate(180deg);
+	}
+.nxt-btn {
+		right:0;
+		
+	}
+.product-container pre-btn img, nxt-btn img{
+		opacity:0.2;
+	}
+.pre-btn:hover img, .nxt-btn:hover img{
+		opacity:1;
+	}
+/*trending-------*/
+.trending{ /* ce bloc va mettre tous les images bjanb bathhom */
+	display:flex;
+	
+	margin-bottom:30px;
+	
+}
+.trending div img{ 
+	width:100%;
+	border-radius:10px;
+	
+}
+.trending h3{
+	font-weight:600;
+	margin-top:10px;
+}
+/* call to action ----*/
+.cta{
+	margin:80px 0;
+	background-image: linear-gradient(to right,#3f2321,transparent),url(img/header.png);
+	background-size: cover;
+	background-position: center;
+	border-radius:10px;
+	padding: 5%;
+	margin-left: 49px;
+	width:83%;
+	color:#fff;
+
+}
+.cta h3{
+	font-size:4vw;
+	line-height:5.3vw;
+	font-weight:500;
+}
+.cta p{
+	font-size:18px;
+	margin:10px 0;
+
+}
+.cta-btn{ /* hethi el button know more */
+	background:#c5a555;
+	color:#fff;
+	text-decoration:none; 
+	padding:12px 30px;
+	border-radius:8px;
+	margin-top:20px;
+	display:inline-block;
+}
+.cta-btn:hover{
+	color:#af2230;
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+	
+/* stories -------- */
+.stories{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+	grid-gap:30px ;
+	margin-bottom:30px;
+	margin:40px;
+
+}
+
+.stories div img {
+	width: 100%;
+	height:500px;
+	border-radius:10px;
+}
+.stories div {
+	position:relative;
+	text-align:center;
+}
+.stories div:hover{
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+.stories div p{
+	width: 300px;
+	position:absolute;
+	top:10%;
+	left:50%;
+	transform:translate(-50% ,-50%);
+	color:#fff;
+	font-size:26px;
+	font-weight: 400;
+	
+}
+
+
+.start-btn {
+	text-decoration: none;
+	background: #AF2230;
+	color:#fff;
+	width:80%;
+	max-width:260;
+	display:block;
+	text-align:center;
+	margin:60px auto;
+	padding:10px;
+	border-radius:30px;
+	font-size:20px;
+
+}
+video{
+	margin-left:47px;
+	
+	
+}
+/* about msg *******/
+.about-msg{
+	text-align: center; 
+	color: #333;
+	margin:80px 0;
+	font-size:17px;
+}
+.about-msg h2{
+	font-size:28px;
+	margin-bottom:30px;
+	font-weight:500;
+}
+/* el fooooterrrr */
+footer{
+	margin:80px 0 10px;
+	text-align:center;
+	
+}
+footer a{
+	text-decoration:none;
+	color:#999;
+	font-size:22px;
+	margin:0 10px;
+	
+}
+footer hr{
+	background:#999;
+	height:1px; 
+	width:100%;
+	border:0;
+	margin:20px 0;
+}
+footer p {
+	padding-bottom:50px; 
+} 
+.social-link{
+	margin-buttom:5px;
+	color:white;
+	texy-decoration:none;
+}
+.social-link:hover{
+	opacity:0.7;
+}
+/*hethi el ligne taht el page f el nav */
+.active{
+	position:relative;
+}
+.active::after{ /*hethi ma khedmetech une petite ligne qui indique que enti f el page popular places min 46*/
+	content: '';
+	background: #fff;
+	width:25px;
+	height:2px;
+	position:absolute;
+	left:50%;
+	transform:translateX(-50%);
+	bottom: -12px;
+	border-radius:2px;
+}
+
+
+
+/* listing page -----------*/
+
+.navbar-white{
+	background:#fff;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+.navbar-white .nav-links li a{
+	color:#000;
+
+}
+.navbar-white .Register-btn{
+	background: #ff5361;
+	color: #fff;
+
+}
+.navbar-white .active::after{ /*el ligne sghaira taht populat*/
+	background:#ff5361;
+}
+.list-container{
+	margin-top:50px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+    padding: 5%;}
+.left-col{
+	flex-basis: 60%;
+}
+.right-col{
+	flex-basis:25%;
+
+}
+.left-col h1{
+	color:#333;
+	font-weight:600;
+	margin-bottom:30px ;
+}
+.house{
+	display:flex;
+	justify-content:space-between ;
+	flex-wrap:wrap;
+	padding:20px 0;
+	border-top: 1px solid #ccc;
+	float:left;
+}
+.house-img{
+	flex-basis: 40%;
+}
+.house-info{
+	flex-basis: 40%;
+	color:#555;
+}
+.house-img img{
+	width:135%;
+	height:80%;
+	border-radius:12px;
+}
+.house-info h3{
+	font-weight: 600;
+	color:#333;
+	font-size:22px;
+	margin:4px 0;
+}
+.house-info i{
+	color:#ff5361;
+	font-size:18px ;
+	margin:10px 1px;
+}
+.house-price{
+	text-align:right;
+}
+.house-price{
+	font-size: 20px;
+}
+.house-price span{
+	font-size: 16px;
+	font-weight: 500;
+}
+.sidebar{
+    
+	border:1px solid #999;
+	padding:10px 20px;
+	margin-top:30px;
+}
+.sidebar h2{
+	font-weight:500 ;
+}
+.sidebar h3{
+	font-weight:500;
+	margin:20px 0 10px;
+}
+.filter
+{
+	display:flex;
+	align-items:center;
+	color:#555;
+	margin-bottom:10px;
+}
+.filter p{
+	flex:1;
+}
+.filter input {
+	margin-right:15px;
+	cursor:pointer;
+}
+.sidebar-link{
+	text-align:right;
+	margin:20px 0;
+
+}
+.sidebar-link a{
+	text-decoration:none;
+}
+.pagination {
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	margin: 40px 0;
+}
+.pagination img{
+	width:15px;
+	margin:10px 20px;
+}
+.right-arrow{
+	transform:rotate(180deg);
+}
+.pagination span{
+	margin:10px 8px;
+	width:40px; 
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border-radius:50px;
+	cursor:pointer;
+
+}
+.pagination .current{
+	background:#333;
+	color:#fff;
+}
+
+
+
+/* ----------------house detailsssssssss ------------------------*/
+
+.house-details{
+	padding:0 12%;
+}
+.house-title{
+	margin-top:50px;
+}
+.house-title h1{
+	font-weight:600;
+	color:#555;
+	}
+.house-title .row{
+	display: flex;
+	flex-wrap:wrap;
+	align-items:center;
+	margin: 10px 0;
+	color:#555;
+	}
+.house-title .span{
+	margin:0 20px;
+	
+}
+.house-title i{
+	color:#ff5361;
+	font-size:14px;
+}
+.gallery{
+ display:grid;
+ grid-gap:10px; /*10px d'espace entre les differentes images*/
+ grid-template-areas: 'first first . .' 'first first . .'; /* sig in the first row were gonna get two big images and two small one same thing for second row*/
+ margin:2px 0;  /* to get space 20px from top and bottom and 0 on the side between the the gallery info and gallery images*/
+}
+.gallery div img{
+	width:100%;
+	display:block;
+	border-radius:10px;
+}
+.gallery-img-1{
+	grid-area: first; /* he said you can write anythink other than first */
+}
+.small-details h2{
+	font-weight:500;
+}
+.small-details h4{
+	text-align:right;
+	font-size:22px;
+		
+
+}
+.ligne {
+	border:0;
+	height:1px;
+	background: #ccc;
+	width:100%;
+	max-width:800px;
+	margin:20px 0 50px; /* 20 from top left right=0 and 50 bottom*/
+}
+.check-form{
+	margin:30px 0;
+	background: #fff;
+	box-shadow: 0 0 30px rgba(0,0,0,0.3);
+	border-radius:8px;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	padding:10px 50px;
+}
+.check-form label{
+	display:block;
+}
+.check-form div {
+	padding:10px;
+}
+.check-form div input {
+	background:transparent;
+	border:0;
+	outline:none;
+	width:90%;
+}
+
+.check-form div  button {
+	
+	background:#ff5361;
+	border:0;
+	outline:none;
+	color:#fff;
+	padding:18px;
+	width:100%;
+	border-radius:8px;
+	font-size:16px;
+	
+	
+}
+.guest-field{
+	flex:1;
+}
+.details-list{
+	list-style:none;
+	margin: 50px ;
+}
+.details-list li{
+ margin-left:50px;
+ font-size: 20px;
+ font-weight:500;
+ margin-bottom:20px;
+ color:#555;
+ position:relative; 
+}
+.details-list li span{
+	display:block;
+	font-weight:400;
+	font-size:16px;
+}
+.details-list li i{
+	position:absolute;
+	top:5px;
+	left: -40px;
+}
+.home-desc{
+	max-width:700px;
+	margin-top:55px;
+	margin-bottom:50px;
+	color:#1A1A1A;
+
+}
+.line2{
+	margin-bottom:50px;
+
+}
+.map {
+	margin:50px 0;
+	
+}
+.map iframe{
+	width:100%;
+	margin-bottom:30px;
+}
+.map h3{
+	font-size:26px;
+	font-weight: 500;
+	margin-bottom:30px;
+}
+.map b{
+	display:block;
+	margin-bottom:16px;
+}
+.host {
+	display:flex;
+	align-items: center;;
+}
+.host img{
+	width:50px;
+	border-radius:50%;
+	margin-right:30px
+}
+.host h2{
+	margin-bottom: 10px;
+	font-weight: 500;
+
+}
+.host i{
+	color:#ff5361;
+}
+.contact-host{
+	display:inline-block;
+	margin:40px 0 40px 120px;
+	text-decoration:none;
+	color:#555;
+	padding:15px 50px;
+	border:1px solid #ff5361;
+	border-radius:8px;
+
+
+}
+/* ------------about us page ----------*/
+
+.abo{/* l'image eli feha deux logo eli amalthom */
+	
+	margin:30px;
+
+	width:75%;
+	height:50%;
+	border-radius:12px;
+	
+	
+}
+.elp{/* el paragraphe eli les9a f el image mta les deux logo f el about us page */
+	margin:30px;
+	color:#1A1A1A;
+	
+	
+	
+}
+
+/* ---------------contact us -----------*/
+/*.t2{
+	display:flex;
+}
+.t2 .imgsabar{
+	width:100%;
+	height:900px;
+	top:0px;
+	left:0px;
+	position:static;
+	
+}
+.t2 td{
+
+	width:100%;
+}
+.t2 .foco{
+	
+	position:relative;
+	width:115%;
+	
+	background-color: #AF2230;
+	height:900px;
+	align-items: center;
+	box-sizing: border-box;
+    
+}
+.t2 .foco .div{
+	margin:16px;
+	width:115%;
+}
+.foco h3{
+	text-align:center; 
+	font-weight:500;
+	padding: 16px;
+	color:#fff;
+}*/
+.t2{
+	background-color: #AF2230;
+}
+.tdbg{
+	
+	width:100%;
+	
+}
+/*.imgsabar{
+	
+	height:800px;
+	
+	
+	
+}*/
+.formi {
+	position: relative;
+  
+	width  : 400px;
+	height : 385px;
+	padding : 16px;
+	padding-left: 100px;
+	padding-top: 50px;
+	border-radius:12px;
+	margin-left:140px;
+	margin:15px;
+  
+	background-color:#fff;
+  }
+  .h11 {
+	position : static;
+	left : 415px;
+	top  : 10px;
+    font-weight: 300px; ;
+	
+  }
+  .container-form{
+	  position:absolute ;
+	  padding-top:70px;
+	 
+  }
+  
+  .from {
+	position: static;
+	left : 398px;
+	top  : 235px;
+	margin:10px;
+	border-color: #AF2230;
+	border:2px;
+	
+  }
+  
+  .reply {
+	position: static;
+	left : 390px;
+	top  : 285px;
+	margin:10px;
+	border-color: #AF2230;
+	border:2px;
+	
+  }
+  .a0{
+	  text-align:left;
+  }
+  
+  .message {
+	position: static;
+	left : 20px;
+	top  : 70px;
+	margin:10px;
+	border-color: #AF2230;
+	border:2px;
+	
+  }
+  input, textarea {
+	
+  
+	border  : none;
+	padding : 0 10px;
+	
+	width   : 240px;
+	margin:10px;
+	background: none;
+	border-color: #AF2230;
+	border:2px;
+
+  }
+  .buttonf{
+	border-radius: 5px;
+    border: 0;
+    width: 150px;
+    height:25px;
+    font-family: Tahoma;
+    background: #AF2230;
+	
+  }
+  .formiframe{
+	  margin:10px;
+	  margin-left:40px;
+	  border-radius: 12px;
+	  
+  }
+  /* sign up pages */
+
+.container2  h1{/*el text find your stay*/
+	font-size: 4vw;
+	font-weight:500;
+	color:#fff;
+	text-align:center;
+	padding-top:110px;
+	padding-bottom:50px;
+}
+.container2 .search-bar{
+	
+	width:40%;
+	height:20%;
+	margin:30px auto;
+	padding:6px 10px 6px 30px ;
+	border-radius:20px;
+	background:#fff ;
+	
+	
+	
+}
+.container2 .search-bar form{
+	display:block;
+	align-items:center;
+
+	
+}
+
+.container2 .search-bar td{
+	display:block;/* c'est la seule option eli tkhalehom lkol fard block bjanb bathhom */
+	margin:auto ;
+	background:transparent; 
+	width:100%;/* les cases de input sont transparente et sans couleurs */
+	padding:10px ;
+
+	
+}
+.container2 .search-bar td label{
+	margin-left:140px;
+}
+.container2 .search-bar td input{
+	margin-left:140px;
+	border-color:#000;
+	border:20px; /*les cases win chtekteb el input ywalew men ghir bordure*/
+	width:80%;
+	align-items: center;
+}
+.container2 .search-bar td button{
+	margin-left:140px;
+	background:#ff5361;
+	border-radius:50%;
+	border:0;
+	outline:none;
+	cursor:pointer;
+	padding-bottom: 50px;
+	
+	
+}
+.container2 .search-bar td button i{
+	position:absolute;
+	margin-top:17px;
+	margin-left:-6px;
+	
+}
+.container2{
+	padding-bottom: 40px;
+}
+.header2{
+	min-height:100vh;
+	width:100%;
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(img/test.jpg);
+	background-size:cover;
+	background-position:center;
+	
+	
+}
+.container2 .search-bar td a{
+	margin-left:140px;
+	font-size: 1vw;
+	font-weight:200;
+	color:#7b161d;
+	text-align:center;
+	
+
+}
+/* no reservation page */
+.container2  h3 {/*el text find your stay*/
+	font-size: 3vw;
+	font-weight:400;
+	color:#fff;
+	text-align:center;
+	padding-top:110px;
+	padding-bottom:50px;
+	margin:35px;
+
+}
+.container2 .cta2{
+	
+	background:#ff5361;
+	color:#fff;
+	text-decoration:none; 
+	padding:12px 30px 12px 30px;
+	border-radius:8px;
+	margin-left:100px;
+	margin-right:100px;
+	justify-content: space-between;
+	display:flex;
+}
+.cta2 a{
+	margin-top:0px;
+
+}
+/* ------------------el page mta registerdone.html ----------------*/
+.container2  .formo button{
+	cursor:pointer;
+	font-size: 16px;
+	font-weight:200;
+	border:0px;
+	margin-top:10px;
+	background:none;
+	color:#fff;
+	text-decoration:none; 	
+	border-radius:8px;
+	justify-content: space-between;
+	display:flex;
+	cursor:pointer;
+	
+}
+.container2 .check-form{
+	width:77%;
+	height:90px;
+	margin-left:100px;
+
+}
+.container2 .check-form button{
+	margin-left:10px;
+}
+
+
+  
+	  
+
+  
+  
+ 
+
+

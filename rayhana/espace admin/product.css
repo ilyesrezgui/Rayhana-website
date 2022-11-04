@@ -1,0 +1,105 @@
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: borger-box; /* allows us to include the padding and border in an element's total width and height.*/
+	font-family: 'roboto', sans-serif; /*sans-serif:Les caract?res n'ont pas d'empattement, leurs extr?mit?s sont anguleuses*/   
+}
+.header{
+	min-height:1vh;
+	width:100%;
+	background-color:#AF2230;
+	background-size:auto;
+	background-position:center;
+	
+	
+}
+nav{
+	padding: 20px 7%;/* 20 from top and bottom and 7 from left and right */
+	display: flex;/*to put space between logo and search box*/
+	justify-content: space-between;/*justify-content:ali0gns the flexible container's items when the items do not use all available space on the main-axis (horizontally)      space-btween:Display the flex items with space between the lines*/
+	align-items:center;
+}
+
+.logo {
+	width:140px;
+	cursor:pointer;
+}
+.nav-links li{
+	list-style:none;
+	display:inline-block; /* meli kenou el links ta7t bathhom bech ywalew bjanb bathhom */
+	margin: 10px 30px;
+	
+}
+.nav-links li a{
+	text-decoration:none;
+	color:#fff;
+}
+
+/*css mta product.php*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+.product{
+    border: 1px solid white;
+	border-radius:10px;
+    margin: -1px 19px 3px -1px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+	width:100%;
+	box-shadow:2px 2px 10px #c0c0c0;
+	
+    }
+
+/*css mtaa publierArt.php*/
+table{
+border-radius:10px;
+padding:10px;
+}	
+td{
+padding-left:0px;	
+border:none;	
+}
+label{
+	font-weight:bold;
+}
+
+input{
+outline:none;	
+padding:10px;
+border-radius:10px;
+border-color:black;
+}
+input:focus{
+	background-color:black;
+	color:white;
+	opacity:0.7;
+}
+
+textarea{
+width:162px;	
+border-width:2px;
+border-color:black;
+padding:10px;	
+border-radius:10px;
+}
+textarea:focus{
+	background-color:black;
+	color:white;
+	opacity:0.7;
+}
+
+input[type=submit], input[type=reset]{
+  border: none;
+  background-color: black;
+  opacity:0.7;
+  color: white;
+  padding: 10px;
+  padding-left:15px;
+  padding-right:15px;
+  cursor: pointer;
+  text-align:center;
+}
+
+input[type=submit]{
+margin-left:101px;
+}

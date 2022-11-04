@@ -1,0 +1,111 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: borger-box; /* allows us to include the padding and border in an element's total width and height.*/
+	font-family: 'roboto', sans-serif; /*sans-serif:Les caract?res n'ont pas d'empattement, leurs extr?mit?s sont anguleuses*/   
+}
+.header{
+	min-height:1vh;
+	width:100%;
+	background-color:#AF2230;
+	background-size:auto;
+	background-position:center;
+	
+	
+}
+nav{
+	padding: 20px 7%;/* 20 from top and bottom and 7 from left and right */
+	display: flex;/*to put space between logo and search box*/
+	justify-content: space-between;/*justify-content:ali0gns the flexible container's items when the items do not use all available space on the main-axis (horizontally)      space-btween:Display the flex items with space between the lines*/
+	align-items:center;
+}
+
+.logo {
+	width:140px;
+	cursor:pointer;
+}
+.nav-links li{
+	list-style:none;
+	display:inline-block; /* meli kenou el links ta7t bathhom bech ywalew bjanb bathhom */
+	margin: 10px 30px;
+	
+}
+.nav-links li a{
+	text-decoration:none;
+	color:#fff;
+}
+.Register-btn{
+	background:#fff;
+	color:#000;
+	padding: 8px 20px ; 
+	border-radius:10px ;
+	text-decoration:none;
+	font-size:14px;
+}
+.Register-btn:hover{
+	color:#AF2230;
+}
+.container1{/* feha el text mta find ypur next stay*/
+	padding:0 7%;
+}
+.search-box{
+			border:9px solid white;
+	        border-radius:10px;
+	        width:340px;
+	        background-color:#fff;
+        }
+.input-txt{
+	        border-style:none;
+			padding: 1px 22px;
+			outline :none;
+        }
+.btn-submit{ 
+	position :absolute;
+	border:3px solid black;
+	border-radius:10px;
+	background-color:black;
+	color:white;
+	outline:none;
+	cursor:pointer;
+	margin:-9px 83px ;
+	padding:8px 10px 8px 6px;
+	width:60px;
+        }
+.btn-submit:hover{ 
+		color :#AF2230;
+}
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+.product{
+    border: 1px solid white;
+	border-radius:10px;
+    margin: -1px 19px 3px -1px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+	width:100%;
+	box-shadow:2px 2px 10px #c0c0c0;
+	
+    }
+
+h2{
+    text-align: center;
+    color: #66afe9;
+    background-color: #efefef;
+    padding: 2%;
+    }
+.text-info{
+	color:black;
+	text-transform: capitalise;	
+}
+.add{
+margin-top: 5px; 
+background-color:#c5a555;
+border:1px solid #c5a555;
+border-radius:10px;
+padding:7px;
+color:white;
+}	
+	
+.add:hover{
+	color:#AF2230;
+}
